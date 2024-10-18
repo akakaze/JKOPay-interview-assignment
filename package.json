@@ -1,0 +1,18 @@
+{
+  "name": "jkopay-interview-assignment",
+  "version": "1.0.0",
+  "description": "街口支付面試題",
+  "main": "index.js",
+  "author": "Joe Huang <akakazebot@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "drizzle-kit/**",
+      "**/drizzle-kit"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:14 # 指定 PostgreSQL 版本為 14
+    container_name: jko_postgres
+    environment:
+      POSTGRES_DB: jko-oauth # 使用你指定的資料庫名稱
+      POSTGRES_USER: jko-admin # 使用你指定的使用者名稱
+      POSTGRES_PASSWORD: Jk0-@dm1n # 使用你指定的密碼
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # 資料持久化
+
+volumes:
+  postgres_data:
